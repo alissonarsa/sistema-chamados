@@ -1,1 +1,14 @@
-lista = [1,2,3,4,5]
+def abrirchamado():
+    pass
+
+def buscarchammados():
+    pass
+
+def removerchamados():
+    pass
+
+def situacaochamdo():
+    pass
+
+def limpar_remover():
+    pass

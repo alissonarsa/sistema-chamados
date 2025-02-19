@@ -33,3 +33,7 @@ if __name__ == "__main__":
     # Testar a função mover_chamado
     chamado_movido = mover_chamado()
     print(f"Chamado movido para finalizados:", chamado_movido)
+    
+    # Testar a função prioridade
+    chamados_ordenados = prioridade()
+    print("Chamados ordenados por prioridade:", chamados_ordenados)

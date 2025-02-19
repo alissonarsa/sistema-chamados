@@ -1,5 +1,5 @@
 {
-    "contador": 26,
+    "contador": 7,
     "chamados": [
         {
             "id": "#000000001",
@@ -10,133 +10,31 @@
         {
             "id": "#000000003",
             "descricao": "Exemplo de descri\u00e7\u00e3o",
-            "prioridade": "alta",
+            "prioridade": "BAIXA",
             "status": "aberto"
         },
         {
             "id": "#000000004",
             "descricao": "Exemplo de descri\u00e7\u00e3o",
-            "prioridade": "alta",
+            "prioridade": "MEDIA",
             "status": "aberto"
         },
         {
             "id": "#000000005",
             "descricao": "Exemplo de descri\u00e7\u00e3o",
-            "prioridade": "alta",
+            "prioridade": "ALTA",
             "status": "aberto"
         },
         {
             "id": "#000000006",
             "descricao": "Exemplo de descri\u00e7\u00e3o",
-            "prioridade": "alta",
+            "prioridade": "ALTA",
             "status": "aberto"
         },
         {
             "id": "#000000007",
             "descricao": "Exemplo de descri\u00e7\u00e3o",
-            "prioridade": "alta",
-            "status": "aberto"
-        },
-        {
-            "id": "#000000008",
-            "descricao": "Exemplo de descri\u00e7\u00e3o",
-            "prioridade": "alta",
-            "status": "aberto"
-        },
-        {
-            "id": "#000000009",
-            "descricao": "Exemplo de descri\u00e7\u00e3o",
             "prioridade": "MEDIA",
-            "status": "aberto"
-        },
-        {
-            "id": "#000000011",
-            "descricao": "Exemplo de descri\u00e7\u00e3o",
-            "prioridade": "alta",
-            "status": "aberto"
-        },
-        {
-            "id": "#000000012",
-            "descricao": "Exemplo de descri\u00e7\u00e3o",
-            "prioridade": "alta",
-            "status": "aberto"
-        },
-        {
-            "id": "#000000013",
-            "descricao": "Exemplo de descri\u00e7\u00e3o",
-            "prioridade": "MEDIA",
-            "status": "aberto"
-        },
-        {
-            "id": "#000000014",
-            "descricao": "Exemplo de descri\u00e7\u00e3o",
-            "prioridade": "BAIXA",
-            "status": "aberto"
-        },
-        {
-            "id": "#000000015",
-            "descricao": "Exemplo de descri\u00e7\u00e3o",
-            "prioridade": "alta",
-            "status": "aberto"
-        },
-        {
-            "id": "#000000016",
-            "descricao": "Exemplo de descri\u00e7\u00e3o",
-            "prioridade": "alta",
-            "status": "aberto"
-        },
-        {
-            "id": "#000000017",
-            "descricao": "Exemplo de descri\u00e7\u00e3o",
-            "prioridade": "BAIXA",
-            "status": "aberto"
-        },
-        {
-            "id": "#000000018",
-            "descricao": "Exemplo de descri\u00e7\u00e3o",
-            "prioridade": "alta",
-            "status": "aberto"
-        },
-        {
-            "id": "#000000019",
-            "descricao": "Exemplo de descri\u00e7\u00e3o",
-            "prioridade": "alta",
-            "status": "aberto"
-        },
-        {
-            "id": "#000000021",
-            "descricao": "Exemplo de descri\u00e7\u00e3o",
-            "prioridade": "alta",
-            "status": "aberto"
-        },
-        {
-            "id": "#000000022",
-            "descricao": "Exemplo de descri\u00e7\u00e3o",
-            "prioridade": "alta",
-            "status": "aberto"
-        },
-        {
-            "id": "#000000023",
-            "descricao": "Exemplo de descri\u00e7\u00e3o",
-            "prioridade": "alta",
-            "status": "aberto"
-        },
-        {
-            "id": "#000000024",
-            "descricao": "Exemplo de descri\u00e7\u00e3o",
-            "prioridade": "alta",
-            "status": "aberto"
-        },
-        {
-            "id": "#000000025",
-            "descricao": "Exemplo de descri\u00e7\u00e3o",
-            "prioridade": "alta",
-            "status": "aberto"
-        },
-        {
-            "id": "#000000026",
-            "descricao": "Exemplo de descri\u00e7\u00e3o",
-            "prioridade": "alta",
             "status": "aberto"
         }
     ]

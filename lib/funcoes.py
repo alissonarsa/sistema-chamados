@@ -80,6 +80,8 @@ def salvar_finalizados(finalizados):
     with open(FINALIZADOS, "w") as f:
         json.dump(data, f, indent=4)
 
+# funções de organização
+
 def mover_chamado():
     chamados = carregar_chamados()
     finalizados = carregar_finalizados()
@@ -90,6 +92,12 @@ def mover_chamado():
     salvar_chamados(chamados)
     salvar_finalizados(finalizados)
     return chamados_a_mover
+
+def prioridade():
+    chamados = carregar_chamados()
+    prioridade_ordem = {"ALTA": 1, "MEDIA": 2, "BAIXA": 3}
+    chamados_ordenados = sorted(chamados, key=lambda chamado: prioridade_ordem.get(chamado['prioridade'], 4))
+    return chamados_ordenados
 
 # funções para gerar chamados
 

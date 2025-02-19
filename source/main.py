@@ -25,3 +25,11 @@ while True:
         prioridade = input("Escolha: ").upper()
         status = "ABERTO"
         gerar_chamado(descricao, prioridade, status)
+    elif menu == "2":
+        print("Vamos buscar um CHAMADO")
+        busca = input("Pesquise seu chamdo: ").lower()
+        buscar_chamado(busca)
+    elif menu == "3":
+        print("Vamos listar os chamados por prioridade")
+        chamados_ordenados = prioridade()
+        print("Chamados por prioridade:", chamados_ordenados)

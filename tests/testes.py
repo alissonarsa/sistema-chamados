@@ -18,3 +18,8 @@ if __name__ == "__main__":
     # Testar a criação de um novo chamado
     chamado = gerar_chamado("Exemplo de descrição", "alta", "aberto")
     print("Novo chamado criado:", chamado)
+
+    # Testar a função buscar_chamado
+    termo = "não"
+    resultados = buscar_chamado(termo)
+    print(f"Resultados da busca por '{termo}':", resultados)

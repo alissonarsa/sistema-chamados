@@ -45,6 +45,14 @@ def salvar_chamados(chamados):
     with open(PATH, "w") as f:
         json.dump(data, f, indent=4)
 
+def buscar_chamado(termo):
+    chamados = carregar_chamados()
+    resultado = []
+    for chamado in chamados:
+        if termo in chamado['id'] or termo in chamado['descricao']:
+            resultado.append(chamado)
+    return resultado
+
 # funções para gerar chamados
 
 def gerar_chamado(descricao, prioridade, status):

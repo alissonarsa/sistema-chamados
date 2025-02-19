@@ -5,6 +5,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # Construir o caminho para o arquivo JSON relativo ao diretório base
 PATH = os.path.join(BASE_DIR, "../database/chamados.json")
+FINALIZADOS = os.path.join(BASE_DIR, "../database/finalizados.json")
 
 # funções gerais
 
@@ -12,6 +13,9 @@ def inicializar_arquivo():
     if not os.path.exists(PATH) or os.path.getsize(PATH) == 0:
         with open(PATH, 'w') as file:
             json.dump({"contador": 0, "chamados": []}, file, indent=4)
+    if not os.path.exists(FINALIZADOS) or os.path.getsize(FINALIZADOS) == 0:
+        with open(FINALIZADOS, 'w') as file:
+            json.dump({"finalizados": []}, file, indent=4)
 
 # funções para o contador
 
@@ -61,6 +65,31 @@ def status_chamado(chamado_id, novo_status):
             salvar_chamados(chamados)
             return chamado
     return None
+
+def carregar_finalizados():
+    inicializar_arquivo()
+    with open(FINALIZADOS, "r") as f:
+        data = json.load(f)
+        return data.get("finalizados", [])
+
+def salvar_finalizados(finalizados):
+    inicializar_arquivo()
+    with open(FINALIZADOS, "r") as f:
+        data = json.load(f)
+    data["finalizados"] = finalizados
+    with open(FINALIZADOS, "w") as f:
+        json.dump(data, f, indent=4)
+
+def mover_chamado():
+    chamados = carregar_chamados()
+    finalizados = carregar_finalizados()
+    chamados_a_mover = [chamado for chamado in chamados if chamado['status'] == 'FINALIZADO']
+    for chamado in chamados_a_mover:
+        chamados.remove(chamado)
+        finalizados.append(chamado)
+    salvar_chamados(chamados)
+    salvar_finalizados(finalizados)
+    return chamados_a_mover
 
 # funções para gerar chamados
 

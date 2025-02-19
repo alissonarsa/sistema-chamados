@@ -29,3 +29,7 @@ if __name__ == "__main__":
     novo_status = "FINALIZADO"
     chamado_atualizado = status_chamado(chamado_id, novo_status)
     print(f"Chamado atualizado com novo status '{novo_status}':", chamado_atualizado)
+
+    # Testar a função mover_chamado
+    chamado_movido = mover_chamado()
+    print(f"Chamado movido para finalizados:", chamado_movido)

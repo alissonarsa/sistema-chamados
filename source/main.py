@@ -12,9 +12,8 @@ while True:
     1 - Novo Chamado
     2 - Buscar Chamado
     3 - Listar Chamados por Prioridade
-    4 - Reverter Chamado
-    5 - Limpar lista de Chamados
-    6 - Status do Chamado
+    4 - Reverter e limpar a lista de Chamados
+    5 - Status do Chamado
     
     Escolha: """)
     
@@ -33,3 +32,18 @@ while True:
         print("Vamos listar os chamados por prioridade")
         chamados_ordenados = prioridade()
         print("Chamados por prioridade:", chamados_ordenados)
+    elif menu == "4":
+        print("Revertendo e limpando a lista de chamados")
+        chamados_revertidos = reverter_e_limpar()
+        print("Chamados revertidos e lista limpa:", chamados_revertidos)
+    elif menu == "5":
+        print("Alterando status do chamado")
+        chamado_id = input("Digite o ID do chamado: ").lower()
+        novo_status = input("Digite o novo status (aberto, em andamento, fechado, concluído): ").lower()
+        chamado = status_chamado(chamado_id, novo_status)
+        if chamado:
+            print("Status do chamado alterado com sucesso!")
+        else:
+            print("Chamado não encontrado.")
+    else:
+        print("Opção inválida. Tente novamente.")

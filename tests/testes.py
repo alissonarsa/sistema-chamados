@@ -37,3 +37,5 @@ if __name__ == "__main__":
     # Testar a função prioridade
     chamados_ordenados = prioridade()
     print("Chamados ordenados por prioridade:", chamados_ordenados)
+
+    # Função reverte e limpa nunca usar kkkk

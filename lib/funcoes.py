@@ -99,6 +99,12 @@ def prioridade():
     chamados_ordenados = sorted(chamados, key=lambda chamado: prioridade_ordem.get(chamado['prioridade'], 4))
     return chamados_ordenados
 
+def reverter_e_limpar():
+    chamados = carregar_chamados()
+    chamados.reverse()
+    salvar_chamados([])
+    return chamados
+
 # funções para gerar chamados
 
 def gerar_chamado(descricao, prioridade, status):

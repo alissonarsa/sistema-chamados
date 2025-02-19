@@ -53,6 +53,15 @@ def buscar_chamado(termo):
             resultado.append(chamado)
     return resultado
 
+def status_chamado(chamado_id, novo_status):
+    chamados = carregar_chamados()
+    for chamado in chamados:
+        if chamado['id'] == chamado_id:
+            chamado['status'] = novo_status
+            salvar_chamados(chamados)
+            return chamado
+    return None
+
 # funções para gerar chamados
 
 def gerar_chamado(descricao, prioridade, status):

@@ -23,3 +23,9 @@ if __name__ == "__main__":
     termo = "não"
     resultados = buscar_chamado(termo)
     print(f"Resultados da busca por '{termo}':", resultados)
+
+    # Testar a função status_chamado
+    chamado_id = "#000000010"
+    novo_status = "FINALIZADO"
+    chamado_atualizado = status_chamado(chamado_id, novo_status)
+    print(f"Chamado atualizado com novo status '{novo_status}':", chamado_atualizado)

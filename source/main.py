@@ -14,6 +14,7 @@ while True:
     3 - Listar Chamados por Prioridade
     4 - Reverter Chamado
     5 - Limpar lista de Chamados
+    6 - Status do Chamado
     
     Escolha: """)
     
